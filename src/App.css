@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  
 }
 #main {
-  margin: 0;
-  margin-top: -70px;
+  margin: 0px;
+  margin-top: 0px;
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -16,6 +15,14 @@
   align-items: center;
   justify-content: space-evenly;
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #001e3c);
+}
+
+#search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #panel{
@@ -31,6 +38,11 @@
   color: whitesmoke;
   font-size: 56px;
   margin: 20px;
+}
+
+.hero-words h1 {
+  line-height: 110px;
+  font-weight: 900;
 }
 
 section.panel {
