@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar/NavBar';
+import Search from './components/Search/Search';
 
 const App = () => {
 
@@ -45,12 +46,14 @@ const App = () => {
   return (
     <>
       <NavBar />
+
       <div id='main'>
-      <div className='hero-words'>
-        <h1>Travel.</h1>
-        <h1>Explore.</h1>
-        <h1>Learn.</h1>
-      </div>
+        <div className='hero-words'>
+          <h1>Travel.</h1>
+          <h1>Explore.</h1>
+          <h1>Learn.</h1>
+          <Search />
+        </div>
         <div className='panels'>
           <section className={panel ? 'active panel' : 'panel'} id='panel' onClick={toggleReadMore}>
             <h3 className="text">Restaurants</h3>
@@ -66,6 +69,7 @@ const App = () => {
           </section>
         </div>
       </div>
+
     </>
   )
 }
