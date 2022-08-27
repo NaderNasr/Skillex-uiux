@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+
+
+input{
+  margin-top: 50px;
+  width: 30vw;
+  height: 4vh;
+  border-radius: 15px;
+  text-decoration: none;
+  padding: 5px;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
