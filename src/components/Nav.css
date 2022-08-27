@@ -1,5 +1,9 @@
 #navbar {
-  background-color: #001e3c;
+  background: rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 #container {
@@ -29,11 +33,14 @@ button {
   padding-left: 20px;
   display: flex;
   flex-direction: row;
-  color:rgb(0, 204, 255);
+  color: aliceblue;
+
+  align-items: center;
 }
 
 .nav-links li a:hover {
-  color: aliceblue;
+  color: rgb(0, 204, 255);
+
 }
 
 button {
