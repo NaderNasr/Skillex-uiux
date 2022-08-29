@@ -1,11 +1,7 @@
-body{
-  background-image: linear-gradient(to right top, #ff0000, #004d7a, #008793, #00bf72, #0080ff);
-
-}
 
 #navbar {
   background: rgba(255, 255, 255, 0.25);
-
+  padding-bottom: 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -16,6 +12,7 @@ body{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 li,
