@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <AppBar position="sticky" id='navbar' elevation={0}>
       <Container id='container'>
-        <h1 id='logo'>FlyX</h1>
+        <h1 id='logo'>Traverse</h1>
         <nav>
           <ul className='nav-links'>
             <li><a href='#'>Services</a></li>
