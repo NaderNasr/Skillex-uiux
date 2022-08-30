@@ -1,10 +1,11 @@
 
 import { useState } from 'react';
 import Search from '../Search/Search';
+import { Grid, CssBaseline } from '@material-ui/core';
 import './Hero.css'
 
 
-const Hero = () => {
+const Hero = ({setCoords}) => {
   const [panel, setPanel] = useState(true);
   const [panel2, setPanel2] = useState(false);
   const [panel3, setPanel3] = useState(false);
@@ -43,12 +44,13 @@ const Hero = () => {
   }
   return (
     <>
+    <CssBaseline/>
        <div id='main'>
         <div className='hero-words'>
           <h1>Travel.</h1>
           <h1>Explore.</h1>
-          <h1>Learn.</h1>
-          <Search />
+          <h1>Traverse.</h1>
+          <Search setCoords={setCoords}/>
         </div>
         <div className='panels'>
           <section className={panel ? 'active panel' : 'panel'} id='panel' onClick={toggleReadMore}>
@@ -58,10 +60,10 @@ const Hero = () => {
             <h3 className="text">Nature</h3>
           </section>
           <section className={panel3 ? 'active panel' : 'panel'} id='panel' onClick={toggleReadMore3}>
-            <h3 className="text">Wild Life</h3>
+            <h3 className="text">Attractions</h3>
           </section>
           <section className={panel4 ? 'active panel' : 'panel'} id='panel' onClick={toggleReadMore4}>
-            <h3 className="text">Beach</h3>
+            <h3 className="text">Hotels</h3>
           </section>
         </div>
       </div>
