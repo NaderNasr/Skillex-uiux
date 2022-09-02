@@ -49,8 +49,8 @@ const App = () => {
       <CssBaseline />
       <NavBar setCoords={setCoords} />
       <Hero setCoords={setCoords} />
-      <Grid container spacing={3} style={{ width: '100vw', margin:'80px' }}>
-        <Grid item xs={12} md={5}>
+      <Grid container spacing={4} style={{ width: '100vw', margin:'80px' }}>
+        <Grid item xs={12} md={4}>
           <List
             places={filteredPlaces.length ? filteredPlaces : places}
             childClicked={childClicked}
@@ -62,7 +62,7 @@ const App = () => {
             setCoords={setCoords}
           />
         </Grid>
-        <Grid item xs={12} md={7}>
+        <Grid item xs={12} md={8}>
           <Maps
             setCoords={setCoords}
             coords={coords}
