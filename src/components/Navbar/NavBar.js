@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import './Nav.css'
 import { Container } from '@mui/system';
 
+
 const NavBar = () => {
 
   return (
@@ -17,7 +18,7 @@ const NavBar = () => {
           </ul>
         </nav>
         <a className='cta' href='#'>
-          <button>Contact</button>
+        <button>Contact</button>
         </a>
       </Container>
     </AppBar>
