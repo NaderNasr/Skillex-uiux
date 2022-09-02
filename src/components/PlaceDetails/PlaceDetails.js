@@ -15,21 +15,16 @@ const PlaceDetails = ({ place, refProp, selected }) => {
   const [open, setOpen] = useState(false);
 
   const awards = (award) => {
-    return (
-      <>
-        <img src={award.images.small} alt={award.display_name} />
-        <Typography variant='subtitle2' color='textSecondary'>{award.display_name}</Typography>
-      </>
-    )
+    <>
+      <img src={award.images.small} alt={award.display_name} />
+      <Typography variant='subtitle2' color='textSecondary'>{award.display_name}</Typography>
+    </>
   }
-
-  // console.log(place)
   return (
     <>
       <Card elevation={6} sx={{ display: 'flex' }}>
         <CardMedia
-          sx={{ display: 'flex' }}
-          style={{ height: 400 }}
+          style={{ height: 350 }}
           image={place.photo ? place.photo.images.large.url : "https://source.unsplash.com/random/?Restaurants, food"}
           title={place.name}
         />
@@ -55,11 +50,12 @@ const PlaceDetails = ({ place, refProp, selected }) => {
           </Box>
           <button onClick={() => setOpen(!open)}>Certifications</button>
           {open ?
-             place?.awards?.map((award) => (
+            place?.awards?.map((award) => (
               <Box display='flex' justifyContent='space-between' my={1}>
                 {awards(award)}
               </Box>
-            )) : <></> }
+            )) : <></>}
+          <br />
           {place?.cuisine?.map((food) => (
             <Chip key={food.name} size='small' label={food.name} className={classes.chip}>{food.name}</Chip>
           ))}
