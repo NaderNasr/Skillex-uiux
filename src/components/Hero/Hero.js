@@ -5,7 +5,7 @@ import { Grid, CssBaseline } from '@material-ui/core';
 import './Hero.css'
 
 
-const Hero = ({setCoords}) => {
+const Hero = () => {
   const [panel, setPanel] = useState(true);
   const [panel2, setPanel2] = useState(false);
   const [panel3, setPanel3] = useState(false);
@@ -50,7 +50,6 @@ const Hero = ({setCoords}) => {
           <h1>Travel.</h1>
           <h1>Explore.</h1>
           <h1>Traverse.</h1>
-          <Search setCoords={setCoords}/>
         </div>
         <div className='panels'>
           <section className={panel ? 'active panel' : 'panel'} id='panel' onClick={toggleReadMore}>
