@@ -11,15 +11,10 @@ const PlaceDetails = ({ place, refProp, selected }) => {
   if (selected) {
     refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
+  // console.log('HAHAHA',place?.awards)
 
   const [open, setOpen] = useState(false);
 
-  const awards = (award) => {
-    <>
-      <img src={award.images.small} alt={award.display_name} />
-      <Typography variant='subtitle2' color='textSecondary'>{award.display_name}</Typography>
-    </>
-  }
   return (
     <>
       <Card elevation={6} sx={{ display: 'flex' }}>
@@ -48,12 +43,13 @@ const PlaceDetails = ({ place, refProp, selected }) => {
             <Typography variant='subtitle1'>Ranking</Typography>
             <Typography variant='subtitle1' gutterBottom> {place.ranking}</Typography>
           </Box>
-          <button onClick={() => setOpen(!open)}>Certifications</button>
           {open ?
             place?.awards?.map((award) => (
               <Box display='flex' justifyContent='space-between' my={1}>
-                {awards(award)}
+                <img src={award.images.small} alt={award.display_name} />
+                <Typography variant='subtitle2' color='textSecondary'>{award.display_name}</Typography>
               </Box>
+
             )) : <></>}
           <br />
           {place?.cuisine?.map((food) => (
@@ -76,6 +72,7 @@ const PlaceDetails = ({ place, refProp, selected }) => {
             <Button size='small' color='primary' onClick={() => window.open(place.website, '_blank')}>
               Website
             </Button>
+            <Button size='small' color='secondary' onClick={() => setOpen(!open)}>Certifications</Button>
           </CardActions>
         </CardContent>
       </Card>
