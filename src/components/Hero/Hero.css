@@ -10,7 +10,7 @@
   margin-bottom: 20px;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -29,6 +29,7 @@
 #panel{
   display: flex;
   flex-direction: column;
+  height: 50vh;
 }
 
 .panels{
