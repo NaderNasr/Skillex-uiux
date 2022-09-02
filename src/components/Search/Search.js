@@ -17,11 +17,15 @@ const Search = ({ setCoords }) => {
     setCoords({ lat, lng })
   }
   return (
-    <>
-      <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged }>
-        <input type="text" id="search" name="search" placeholder='Where do you want to go?' />
+    <div class="container">
+      <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
+        <div class="control-group">
+          <input id="input" type="text" name="input" placeholder="City, Country" />
+          <label for="input">Where do you want to traverse?</label>
+        </div>
       </Autocomplete>
-    </>
+    </div>
+
   )
 }
 
