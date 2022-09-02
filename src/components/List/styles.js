@@ -12,6 +12,10 @@ export default makeStyles((theme) => ({
   },
   container: {
     padding: '25px',
+    background: 'rgba(255, 255, 255, 0.25)',
+    backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255, 255, 255, 0.18)',
+    borderRadius:'10px',
   },
   marginBottom: {
     marginBottom: '30px',
