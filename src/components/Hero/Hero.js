@@ -1,8 +1,8 @@
 
 import { useState } from 'react';
-import Search from '../Search/Search';
-import { Grid, CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@material-ui/core';
 import './Hero.css'
+
 
 
 const Hero = () => {
