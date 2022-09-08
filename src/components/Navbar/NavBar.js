@@ -11,13 +11,13 @@ const NavBar = () => {
       <Container id='container'>
         <h1 id='logo'>Traverse</h1>
         <nav>
-          <ul className='nav-links'>
-            <li><a href='#'>Services</a></li>
-            <li><a href='#'>Projects</a></li>
-            <li><a href='#'>About</a></li>
-          </ul>
+          {/* <ul className='nav-links'>
+            <li><a href='/'>Services</a></li>
+            <li><a href='/'>Projects</a></li>
+            <li><a href='/'>About</a></li>
+          </ul> */}
         </nav>
-        <a className='cta' href='#'>
+        <a className='cta' href='https://www.nadernasr.ca'>
         <button>Contact</button>
         </a>
       </Container>
