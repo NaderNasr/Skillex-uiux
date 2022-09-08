@@ -8,6 +8,7 @@ import { getPlaces } from './api'
 import { CssBaseline, Grid } from '@material-ui/core';
 
 import './App.css'
+import Footer from './components/Footer/Footer';
 const App = () => {
 
   const [places, setPlaces] = useState([]);
@@ -72,6 +73,7 @@ const App = () => {
           />
         </Grid>
       </Grid>
+      <Footer/>
     </>
   )
 }
