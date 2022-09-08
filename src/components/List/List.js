@@ -1,7 +1,6 @@
-import { CircularProgress, Select, Grid, Typography, InputLabel, MenuItem, FormControl } from "@material-ui/core"
+import { CircularProgress, Select, Grid, InputLabel, MenuItem, FormControl } from "@material-ui/core"
 import { createRef, useEffect, useState } from "react"
 import PlaceDetails from "../PlaceDetails/PlaceDetails"
-import Carousel from 'react-material-ui-carousel'
 import useStyles from './styles'
 
 
