@@ -9,6 +9,6 @@ Converted from - https://www.figma.com/community/file/1141302145886865700
 # Stack
 - React
 - Material UI
-- Google mape API
+- Google map API
 - Axios
 - Figma
